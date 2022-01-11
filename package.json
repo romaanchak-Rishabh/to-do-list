@@ -1,9 +1,11 @@
 {
   "name": "protected-routes",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.0",
     "react-dom": "^16.8.5",
@@ -14,6 +16,8 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
